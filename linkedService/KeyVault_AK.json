@@ -1,0 +1,11 @@
+{
+	"name": "KeyVault_AK",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureKeyVault",
+		"typeProperties": {
+			"baseUrl": "https://akshayKey.vault.azure.net/"
+		}
+	}
+}

@@ -1,0 +1,19 @@
+{
+	"name": "Binary_output1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_outputstorage",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "sub_task3",
+				"fileSystem": "outputcontainer"
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

@@ -1,0 +1,18 @@
+{
+	"name": "Binary_LOF",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_inputstorage_ak",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileSystem": "inputcontainer"
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

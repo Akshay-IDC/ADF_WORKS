@@ -1,0 +1,18 @@
+{
+	"name": "LS_Storage_Ak",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureBlobStorage",
+		"typeProperties": {
+			"connectionString": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "KeyVault_AK",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "StorageKeyAk"
+			}
+		}
+	}
+}

@@ -1,0 +1,35 @@
+{
+	"name": "PL_data_retrive_from_db",
+	"properties": {
+		"activities": [
+			{
+				"name": "Lookup_data_retrive",
+				"type": "Lookup",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "AzureSqlSource",
+						"queryTimeout": "02:00:00",
+						"partitionOption": "None"
+					},
+					"dataset": {
+						"referenceName": "AzureSqlTable1_AK",
+						"type": "DatasetReference"
+					},
+					"firstRowOnly": false
+				}
+			}
+		],
+		"annotations": [],
+		"lastPublishTime": "2025-05-23T11:35:36Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}
